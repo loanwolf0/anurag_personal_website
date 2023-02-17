@@ -1,0 +1,120 @@
+.contactMe{
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.contactMe .containerC{
+    display: flex;
+    width: 80%;
+    padding: 20px;
+    align-items: start;
+    justify-content: space-around;
+    background-color: rgb(224, 220, 220);
+    border-radius: 20px;
+
+}
+
+.contactMe a{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-decoration: none;
+    color: rgba(0,0,0,0.7);
+}
+
+.contactMe a svg{
+    margin:  10px;
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.contactMe a:hover svg{
+    color: black;
+    transform: scale(1.2);
+    background-color: rgb(255, 217, 15);
+}
+
+.contactMe .contactMeLeft{
+    padding: 15px;
+    display: flex;
+    margin: 0 2rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactMe .contactMeRight{
+    padding: 15px;
+    width: 350px;
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.contactMe .contactMeRight form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.contactMe .inputC{
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 5px;
+    font-size: 16px;
+
+
+}
+
+.contactMe .textAreaC{
+    height: 100px;
+    font-size: 16px;
+}
+
+.contactMe .contactMeRight form button{
+    width: 375px;
+    font-size: 16px;
+
+}
+
+.toastContainerC {
+    position: fixed;
+    right: 10px;
+    width: 400px;
+    height: 80px;
+    bottom: 20px;
+    color: rgba(0,0,0,0.7);
+    background-color: rgb(255, 217, 15);
+    border-radius: 5px;
+}
+
+@media screen  and (max-width:750px){
+    .contactMe .containerC{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    } 
+    .contactMe .contactMeRight{
+        width: 250px;
+        margin: 30px 5px;
+    }
+    .contactMe .contactMeRight form button{
+        width: 275px;
+    }
+    .contactMe .textAreaC{
+        font-size: 14px;
+    }
+    .contactMe .inputC{
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,127 @@
+.navbar{
+    padding: 10px;
+    width: 90%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    position: fixed;
+    z-index: 9999999;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50% );
+    transition: all 0.5s ease-in-out;
+}
+
+
+.left h1{
+    font-weight: 800;
+
+}
+.right {
+    display: flex;
+        animation: menuEffect  0.4s ease-in-out;
+
+
+}
+
+.right .li{
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    padding: 10px 25px;
+    color: black;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.right .li:hover{
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(255, 217, 15);
+    box-shadow: -5px 5px 12px rgba(255, 255, 255, 0.1), 
+                inset 5px -5px 10px rgba(0, 0, 0, 0.15);
+
+    color:  black;
+    transform: scale(1.01);
+
+}
+
+.icons{
+    display: none;
+}
+
+
+@media screen  and (max-width:1000px){
+    .right {
+        display: none;
+    }
+
+    .icons{
+        display: block;
+        margin: 10px;
+        padding: 10px 20px;
+        font-size: 25px;
+        font-weight: 200;
+    }
+    .icons:hover{
+        cursor: pointer;
+    }
+
+    .right_active {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        opacity: 0;
+        margin: 20px 0;
+        justify-content: flex-start;
+        align-items: stretch;
+        text-align: center;
+        padding:80px 0 10px 0 ;
+        border-radius: 20px;
+
+
+    }
+    .right_active .li{
+        font-size: 30px;
+        margin: 10px  ;
+        padding: 10px;
+        font-weight: 300;
+    }
+
+    .right.right_active{
+        z-index: -1;
+        left: 0;
+        opacity: 1;
+
+    }
+    .left h1{
+        font-size: 25px;
+    }
+  
+}
+
+@keyframes menuEffect {
+    0%{
+        left: -100%;
+        opacity: 0;
+    }
+    100%{
+        left: 0;
+        opacity: 1;
+    }    
+}
+
+
+
+
+

@@ -1,0 +1,148 @@
+.about-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0rem;
+}
+
+.aboutStyle{
+    margin: 3rem 1rem;
+    width: 70%;
+    height: 60%;
+}
+
+.aboutStyle .about-left-info{
+
+    align-items: start;
+    background-color: #090c31;
+    border-radius: 15px 200px 200px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    margin-left: -120px;
+    width: 100%;
+    color: white;
+    transition: all 1s ease-in-out;
+}
+.aboutStyle .about-right-info{
+
+    align-items: end;
+    background-color: #090c31;
+    border-radius: 200px 15px 15px 200px;
+    display: flex;
+    margin-right: -120px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    width: 100%;
+    color: white;
+    transition: all 1s ease-in-out;
+}
+
+.about-right-infop{
+    align-items: start;
+    text-align: justify;
+}
+
+.aboutStyle .about-left-info h1{
+    color: rgb(255, 217, 15);
+    font-weight: 900;
+    font-family: cursive;
+    transition: all 1s ease-in-out;
+}
+.aboutStyle .about-right-info h1{
+    color: rgb(255, 217, 15);
+    font-weight: 900;
+    font-family: cursive;
+    transition: all 1s ease-in-out;
+}
+
+.aboutStyle .about-left-info .about-left-infop{
+    padding: 1.5rem ;
+}
+
+.aboutStyle .about-left-info:hover{
+    cursor: pointer;
+    transform: scale(1.08);
+    background-color: #010321;
+  
+}
+.aboutStyle .about-left-info:hover h1{
+    /* color: white; */
+    font-weight: 900;
+}
+.aboutStyle .about-right-info:hover{
+    cursor: pointer;
+    transform: scale(1.08);
+    background-color: #010321;
+  
+}
+.aboutStyle .about-right-info:hover h1{
+    /* color: white; */
+    font-weight: 900;
+}
+
+
+@media screen and (max-width:750px){
+    
+    .aboutStyle{
+        width: 80%;
+        height: 100%;
+        margin: 20px 10px 10px 10px;
+    }
+    .aboutStyle .about-right-info{
+        border-radius: 15px;
+        padding: 10px;
+        margin-right: 0;
+
+    }
+    .aboutStyle .about-left-info{
+        border-radius: 15px;
+        padding: 10px;
+        margin-left: 0;
+
+    }
+    .aboutStyle .about-right-info:hover{
+        transform: scale(1.0);
+    }
+    .aboutStyle .about-left-info:hover{
+        transform: scale(1.0);
+    }
+
+    .aboutStyle .about-right-info .about-right-infop{
+        font-size: 16px;
+    }
+    .aboutStyle .about-left-info .about-left-infop{
+        font-size: 16px;
+    }
+    .aboutStyle .about-right-info h1{
+        font-size: 20px;
+    }
+    .aboutStyle .about-left-info h1{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width:750px) and (max-width:1000px){
+    .aboutStyle{
+        width: 70%;
+        height: 100%;
+        margin: 50px 10px 0px 10px;
+    }
+    .aboutStyle .about-left-info{
+        border-radius: 10px 100px 100px 10px;
+        margin-left: -50px;
+    }
+    .aboutStyle .about-right-info{
+        border-radius: 100px 10px 10px 100px;
+        margin-right: -50px;
+    }
+    .aboutStyle .about-left-info:hover{
+        transform: scale(1.035);
+    }
+    .aboutStyle .about-right-info:hover{
+        transform: scale(1.035);
+    }
+}

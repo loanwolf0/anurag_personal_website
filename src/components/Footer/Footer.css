@@ -1,0 +1,86 @@
+.footer{
+    background-color: black;
+    margin: 0;
+    padding: 20px;
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.footer p {
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+}
+.footer h3{
+    font-size: 30px;
+    color: white;
+    font-style: bold;
+    font-weight: 900;
+}
+a{
+    color: green;
+}
+
+
+ 
+.footer .left{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer .left .leftI{
+    display: flex;
+    align-items: center;
+}
+
+.footer svg{
+    margin: 10px 10px 10px 0;
+    font-size: 25px;
+    color: rgba(0,0,0,0.7);
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+.footer .leftI:hover svg{
+    color: black;
+    cursor: pointer;
+    background-color: rgb(255, 217, 15);
+    transform: scale(1.2);
+}
+
+.footer svg:hover{
+    color: black;
+    cursor: pointer;
+    background-color: rgb(255, 217, 15);
+    transform: scale(1.2);
+}
+
+
+a{
+    text-decoration: none;
+}
+.footer .right{
+    display: flex;
+    flex-direction: column;
+}
+
+.right .iconsf{
+    display: flex;
+    
+}
+.right .iconsf a{
+    margin-right: 10px;
+}
+
+@media screen and (max-width:700px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+}

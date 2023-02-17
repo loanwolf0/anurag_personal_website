@@ -1,0 +1,120 @@
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+    top: 0;
+}
+
+.heroMid{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+
+}
+.heroMid::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .5;
+}
+
+.heroMid .heroTxt{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%)  ;
+    z-index: 1;
+    word-spacing: 5px;
+}
+
+.hero::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .6;
+}
+.heroImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.heroTxt{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%)  ;
+    z-index: 1;
+}
+.heroTxt h3{
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family:'Times New Roman', Times, serif ;
+    
+}
+.heroTxt .showTypewriter{
+    color: rgb(255, 217, 15);
+    font-size: 35px;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 3px;
+    font-family:'Times New Roman', Times, serif ;
+}
+
+.heroTxt .hide{
+display: none;
+}
+
+
+.heroBtn{
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%,-50%)  ;
+
+}
+.heroBtnHide{
+    display: none;
+}
+
+.btn{
+    padding: 15px 32px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: rgb(255, 217, 15);
+    box-shadow: -5px 5px 12px rgba(255, 255, 255, 0.1), 
+    inset 5px -5px 10px rgba(0, 0, 0, 0.4);
+    color: #222;
+    border-radius: 10px;
+    font-weight: 500;
+    border: none;
+    
+}
+.btn-light{
+    background-color: gray;
+    color: white;
+
+}
+
+/* not working hover effect on button  */
+.btn:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
